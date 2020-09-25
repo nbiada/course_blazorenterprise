@@ -17,17 +17,17 @@ social-network-links:
   twitter: BiadaNicola
   linkedin: nicolabiada
 
-# share-links-active:
-#   twitter: true
-#   facebook: true
-#   linkedin: true
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
 
 # Output options (more information on Jekyll's site)
-timezone: "Europe/Rome"
-markdown: kramdown
-highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
+# timezone: "Europe/Rome"
+# markdown: kramdown
+# highlighter: rouge
+# permalink: /:year-:month-:day-:title/
+# paginate: 5
 
 plugins:
   - jekyll-paginate
