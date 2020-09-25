@@ -1,1 +1,12 @@
 theme: jekyll-theme-slate
+title: Blazor Enterprise
+description: BLZ-ENT-01 Autumn 2020
+author: Nicola Biada
+
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://biada.it"
+  
