@@ -1,9 +1,10 @@
 # Organizzazione dell'applicazione
 
- ## La Solution
- La Solution è divisa in __5 progetti__.
+## La Solution
 
- 1. __UI__
+La Solution è divisa in __5 progetti__.
+
+1. __UI__
     
     a. Components\
     _componenti ad uso dell'interfaccia (modali)_
