@@ -13,9 +13,10 @@ Viene creata una nuova istanza __ogni volta che c'è una richiesta__. Se due cla
 ---
 ## Differenze tra Client e Server Side
 
-Da Chris Saint - https://chrissainty.com/service-lifetimes-in-blazor
+Da Chris Saint - [Services Lifetimes in Blazor](https://chrissainty.com/service-lifetimes-in-blazor)
 
 ### Client Side (WebAssembly)
+
 Operation | Singleton | Scoped | Transient
 --------- | --------- | ------ | ---------
 Load home page | e353550e | bed089e5 | d748aa15
