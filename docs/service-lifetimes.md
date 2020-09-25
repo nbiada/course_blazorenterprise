@@ -26,9 +26,10 @@ Open app in new incognito tab | 369fc493 | 657f12a9 | 903983b4
 
 
 ### Server Side
-| Operation | Singleton | Scoped | Transient |
-| --------- | --------- | ------ | --------- |
-| Load home page | e353550e | bed089e5 | d748aa15 |
-| Navigate to counter page | e353550e | bed089e5 | 48fc9930 |
-| Reload the page | e353550e | 273eb2da |  5ebd1782 |
-| Open app in new incognito tab | e353550e | 657f12a9 | 903983b4 |
+
+Operation | Singleton | Scoped | Transient
+--------- | --------- | ------ | ---------
+Load home page | e353550e | bed089e5 | d748aa15
+Navigate to counter page | e353550e | bed089e5 | 48fc9930
+Reload the page | e353550e | 273eb2da |  5ebd1782
+Open app in new incognito tab | e353550e | 657f12a9 | 903983b4
