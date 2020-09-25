@@ -10,3 +10,9 @@ navbar-links:
     - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://biada.it"
   
+social-network-links:
+  email: "nicola@biada.it"
+  facebook: nicola.biada
+  github: nbiada
+  twitter: BiadaNicola
+  linkedin: nicolabiada
