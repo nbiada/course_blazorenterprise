@@ -16,3 +16,7 @@ social-network-links:
   github: nbiada
   twitter: BiadaNicola
   linkedin: nicolabiada
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
