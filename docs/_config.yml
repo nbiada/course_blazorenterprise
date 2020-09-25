@@ -17,10 +17,10 @@ social-network-links:
   twitter: BiadaNicola
   linkedin: nicolabiada
 
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
+# share-links-active:
+#   twitter: true
+#   facebook: true
+#   linkedin: true
 
 # Output options (more information on Jekyll's site)
 # timezone: "Europe/Rome"
