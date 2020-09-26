@@ -2,12 +2,17 @@
 
 ## La Solution
 
-![Project Structure](assets/images/BlazorServerProjectStructure.png)
+![Project Structure](assets/images/ProjectStructure.png)
 
-La Solution è divisa in __5 progetti__.
+La Soluzione sopra visualizzata è un esempio di organizzazione dell'applicazione che consente una corretta _suddivisione logica_.
+
+
+La soluzione è divisa in __5 progetti__.
 
 1. __UI__
-    
+
+    ![UI](assets/images/ProjectStructure_UI.png)
+
     a. Components\
     _componenti ad uso dell'interfaccia (modali)_
 
@@ -33,28 +38,59 @@ La Solution è divisa in __5 progetti__.
 
 4. __Api__
 
-    server App. Contiene i controllers, lo Startup e l'appsettings
+    ![Api](assets/images/ProjectStructure_Api.png)
+
+    REST Api server side.\
+    Contiene i Controllers, lo Startup e l'appsettings
 
 5. __ComponentsLibrary__
 
     contiene l'integrazione con OpenStreetmap, pensata per diventare un package NuGet
 
-### Analisi
-Nell'organizzazione che utilizzo __Api__ e __Data__ sono all'interno del medesimo progetto.\
-Mantenerli separati ha senso solamente se in prospettiva si pensa di utilizzare un'altra forma di fruizione dei dati oltre alla Rest API.\
-Potrebbe essere un ragionamento interessante in funzione di avere anche GraphQL. Da valutare.\
-_Dipendenze: Data -> Shared, Api -> Data, Shared_
+## Analisi
+
+### API e Data
+L'organizzazione corretta di un progetto può unificare __Api__ e __Data__ all'interno di un'unico progetto chiamato __Api__.
+
+Mantenere separati i progetti ha senso se in prospettiva si pensa di utilizzare un'altra forma di fruizione dei dati oltre alla Rest API.\
+Potrebbe essere un ragionamento interessante in funzione di avere una fruizione via __GraphQL__.\
+Da valutare progetto per progetto.
+
+| Progetto | Dipende da |
+| -------- | ---------- |
+| Data | Shared |
+| Api | Data, Shared |
+
+<br>
+
+### ComponentsLibrary
 
 La __ComponentsLibrary__ potrebbe essere un'idea interessante, ma solamente per aree fortemente trasversali.\
 L'esempio della mappa via OpenStreet è una buona idea.\
-_Dipendeze: nessuna_
+| Progetto | Dipende da |
+| -------- | ---------- |
+| ComponentsLibrary | _nessuno_ |
 
+
+<br>
+
+### Shared
 
 Il progetto __Shared__ accentra modelli dati e validazioni.\
 Normalmente mantengo separate le validazioni per ottimizzare i View Model.\
-Qui è meglio mantenere _solamente_ i modelli dati, senza validazioni.\
-_Dipendenze: nessuna_
+Qui è meglio mantenere _solamente_ i modelli dati, senza validazioni.
 
-La __UI__ è correttamente separata.\
-_Dipendenze: Shared, ComponentsLibrary_
+| Progetto | Dipende da |
+| -------- | ---------- |
+| Shared | _nessuno_ |
+
+<br>
+
+### UI
+
+La __UI__ è correttamente separata.
+
+| Progetto | Dipende da |
+| -------- | ---------- |
+| Data | Shared, ComponentsLibrary |
 
