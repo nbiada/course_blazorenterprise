@@ -31,3 +31,8 @@ body {
     padding: 2rem 2rem;
   }
 }
+.main-content img[src~="shadow"] {
+  -webkit-box-shadow: 0px 5px 7px 3px rgba(196,196,196,1);
+  -moz-box-shadow: 0px 5px 7px 3px rgba(196,196,196,1);
+  box-shadow: 0px 5px 7px 3px rgba(196,196,196,1);
+}

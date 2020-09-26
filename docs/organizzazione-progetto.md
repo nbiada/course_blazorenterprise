@@ -2,7 +2,7 @@
 
 ## La Solution
 
-![Project Structure](assets/images/ProjectStructure.png)
+![Project Structure](assets/images/ProjectStructure.png#shadow)
 
 La Soluzione sopra visualizzata è un esempio di organizzazione dell'applicazione che consente una corretta _suddivisione logica_.
 
@@ -11,14 +11,14 @@ La soluzione è divisa in __5 progetti__.
 
 È necessario configurare l'avvio multiplo: prima il progetto __API__ e dopo il progetto __UI__.
 
-![UI](assets/images/ProjectStructure_MultipleStartup.png)
+![UI](assets/images/ProjectStructure_MultipleStartup.png#shadow)
 
 
 ### I progetti
 
 1. __Api__
 
-    ![Api](assets/images/ProjectStructure_Api.png)
+    ![Api](assets/images/ProjectStructure_Api.png#shadow)
 
     È il progetto che avvia il sito delle __REST Api__.\
     Contiene i Controllers, lo Startup e l'appsettings.
@@ -37,7 +37,7 @@ La soluzione è divisa in __5 progetti__.
 
 5. __UI__
 
-    ![UI](assets/images/ProjectStructure_UI.png)
+    ![UI](assets/images/ProjectStructure_UI.png#shadow)
 
     a. Components\
     _componenti ad uso dell'interfaccia (modali)_

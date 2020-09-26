@@ -6,7 +6,7 @@ Per facilitare lo sviluppo dei form, sfruttando la struttura a _componenti_ tipi
 
 Uno dei componenti più sfrutatti è sicuramente `InputSelect`.
 
-Il componente `InputSelect` genera l'HTML del tag `<input>` e le relatove `option`.
+Il componente `InputSelect` genera l'HTML del tag `<input>` e le relative `option`.
 
 Vediamo un esempio:
 
