@@ -18,14 +18,14 @@ _HttpClientFactory_ supporta diverse opzioni di configurazione:
 - Typed clients
 - Generated clients
 
-Al momento ci concentriamo sull'opzione __Typed clients__ che rappresenta l'opzione consigliata da Microsoft per le applicazioni enterprise.
+__Typed clients__ rappresenta l'opzione consigliata da Microsoft per le applicazioni enterprise.
 
 ## Configurazione
-Nello scenario di base un'applicazione Blazor implementa un servizio HttpClient all'interno di `ConfigureServices`:
+Di default un'applicazione Blazor implementa un servizio HttpClient all'interno di `ConfigureServices`:
 
 ```csharp
 services.AddScoped<HttpClient>(s => {
-    var client = new HttpClient { BaseAddress = new Syste.Uri("https://api.dom") };
+    var client = new HttpClient { BaseAddress = new System.Uri("https://api.dom") };
     return client;
 })
 ```
@@ -35,7 +35,7 @@ Questo approccio non consente di richiamare Rest APIs con indirizzi di base diff
 Blazor mette a disposizione delle classi di Helper che facilitano e promuovono uno sviluppo più strutturato.
 
 ```csharp
-var appURI = new Uri("http://app.dom");
+var apiURI = new Uri("http://api.dom");
 
 void RegisterTypedClient<TClient, TImplementation>(Uri apiBaseUrl) where TClient: class where TImplementation: class, TClient {
     services.AddHttpClient<TClient, TImplementation>(client =>
@@ -45,11 +45,12 @@ void RegisterTypedClient<TClient, TImplementation>(Uri apiBaseUrl) where TClient
 }
 
 // Http Services
-RegisterTypedClient<IEmployeeDataService, EmployeeDataService>(appURI);
+RegisterTypedClient<IEmployeeDataService, EmployeeDataService>(apiURI);
 ...
 ```
 L'utilizzo all'interno dei servizi rimane il medesimo, perché l'Helper continua a ritornare un'istanza HttpClient.\
 Quindi il codice sotto funziona senza modifiche:
+
 ```csharp
 private readonly HttpClient _htppClient;
 
