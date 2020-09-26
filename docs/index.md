@@ -1,4 +1,4 @@
-## Welcome to Blazor Enterprise Course
+## Blazor Enterprise Course
 
 * [Introduzione](introduzione.html)
 * [Organizzazione del progetto](organizzazione-progetto.html)
