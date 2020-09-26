@@ -9,7 +9,33 @@ La Soluzione sopra visualizzata è un esempio di organizzazione dell'applicazion
 
 La soluzione è divisa in __5 progetti__.
 
-1. __UI__
+È necessario configurare l'avvio multiplo: prima il progetto __API__ e dopo il progetto __UI__.
+
+![UI](assets/images/ProjectStructure_MultipleStartup.png)
+
+
+### I progetti
+
+1. __Api__
+
+    ![Api](assets/images/ProjectStructure_Api.png)
+
+    È il progetto che avvia il sito delle __REST Api__.\
+    Contiene i Controllers, lo Startup e l'appsettings.
+
+2. __ComponentsLibrary__
+
+    contiene l'integrazione con OpenStreetmap, pensata per diventare un package NuGet
+
+3. __Data__
+
+    DbContext e Repositories (con relative interfaccie) per il recupero e aggiornamento dei dati
+
+4. __Shared__
+
+    modelli dati (comprese data annotations per validazione)
+
+5. __UI__
 
     ![UI](assets/images/ProjectStructure_UI.png)
 
@@ -28,24 +54,8 @@ La soluzione è divisa in __5 progetti__.
     e.Shared\
     _NavMenu e MainLayout_
 
-2. __Shared__
 
-    modelli dati (comprese data annotations per validazione)
 
-3. __Data__
-
-    DbContext e Repositories (con relative interfaccie) per il recupero e aggiornamento dei dati
-
-4. __Api__
-
-    ![Api](assets/images/ProjectStructure_Api.png)
-
-    REST Api server side.\
-    Contiene i Controllers, lo Startup e l'appsettings
-
-5. __ComponentsLibrary__
-
-    contiene l'integrazione con OpenStreetmap, pensata per diventare un package NuGet
 
 ## Analisi
 
