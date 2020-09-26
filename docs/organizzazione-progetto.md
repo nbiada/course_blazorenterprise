@@ -76,7 +76,8 @@ Da valutare progetto per progetto.
 ### ComponentsLibrary
 
 La __ComponentsLibrary__ potrebbe essere un'idea interessante, ma solamente per aree fortemente trasversali.\
-L'esempio della mappa via OpenStreet è una buona idea.\
+L'esempio della mappa via OpenStreet è una buona idea.
+
 | Progetto | Dipende da |
 | -------- | ---------- |
 | ComponentsLibrary | _nessuno_ |
