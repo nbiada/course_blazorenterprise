@@ -3,6 +3,18 @@
 
 @import "{{ site.theme }}";
 
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  background: lightblue; 
+  flex-grow: 1;
+}
+
 .page-header {
   color: #fff;
   text-align: center;
