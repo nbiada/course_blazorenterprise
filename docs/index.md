@@ -5,8 +5,8 @@
 * [Routing](routings.html)
 * [Service Lifetimes](service-lifetimes.html)
 * [Circuit](circuit.html)
-* [Forms](forms.html)
-* [Http Communication - parte 1](http-communication.html)
-* [Http Communication - parte 2](http-communication-2.html)
+* [Forms - _Validazione avanzata_](forms.html)
+* [Http Communication - _HttpClientFactory_](http-communication.html)
+* [Http Communication - _Json Serializer Helpers_](http-communication-2.html)
 
 

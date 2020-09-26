@@ -1,5 +1,5 @@
-# Blazor Helpers
-Per facilitare lo sfruttamento dei servizi di recupero dati via Rest API Blazor mette a disposizione una serie di Helper.
+# Json Serializer Helpers
+Per facilitare lo sfruttamento dei servizi di recupero dati via Rest API Blazor mette a disposizione una serie di __Json Helpers__.
 
 Un servizio _classico_ recupera i dati così:
 
