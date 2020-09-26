@@ -2,6 +2,8 @@
 
 ## La Solution
 
+![Project Structure](assets/images/BlazorServerProjectStructure.png)
+
 La Solution è divisa in __5 progetti__.
 
 1. __UI__
