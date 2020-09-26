@@ -8,7 +8,7 @@ A differenza delle applicazioni web _classiche_ un'applicazione Blazor Server ma
 
 Qualora un client cambi pagina o effettui una chiusura del browser il Circuit è rilasciato correttamente.
 
-Se il client subisce una disconnessione forzata (problemi di rete) il Circui tenterà di ricollegarsi per un determianto periodo di tempo (retry), fino al fallimento.
+Se il client subisce una disconnessione forzata (problemi di rete) il Circuit tenterà di ricollegarsi per un determianto periodo di tempo (retry), fino al fallimento.
 
 ## Scoped Circuit
 Esempio:
